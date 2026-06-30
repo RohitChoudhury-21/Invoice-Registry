@@ -218,7 +218,7 @@ invoice_documents (many-to-many link)
 ### **Functional Testing (Manual)**
 
 | Task | Test | Result | Pass/Fail |
-|---|---|---|---|
+|------|------|--------|-----------|
 | 2 | Upload PDF, check document row created | Document 1 created with status=processed | ✅ |
 | 3 | Upload same PDF twice | Second attempt returns 409 | ✅ |
 | 4 | Upload invoice with vendor="Acme Corp", date="04.04.2026" | Vendor normalized to "ACME", date parsed to "2026-04-04" | ✅ |
@@ -363,7 +363,7 @@ Project_2/
 ## Technology Stack
 
 | Component | Technology | Version | Notes |
-|---|---|---|---|
+|-----------|------------|---------|-------|
 | Backend Framework | FastAPI | 0.138.0 | Async, auto-docs, built-in validation |
 | ORM | SQLAlchemy | 2.0.51 | Type-safe, Mapped types |
 | Database | SQLite | (bundled) | FTS5 extension for full-text search |
@@ -401,37 +401,6 @@ SELECT * FROM invoices LIMIT 10;
 SELECT COUNT(*) FROM duplicate_candidates WHERE status='pending';
 EXPLAIN QUERY PLAN SELECT * FROM invoices WHERE vendor_normalized=? AND invoice_number=?;
 ```
-
-### **Adding New Endpoints**
-1. Define Pydantic model (if input needed)
-2. Write endpoint in `app/main.py` with proper HTTP method/status codes
-3. Add database helpers in `app/db.py` if needed
-4. Test via curl or browser; update frontend if needed
-
----
-
-## Support & Contact
-
-- **Project Manager:** [Your Name]
-- **Tech Lead:** [Claude - AI Assistant]
-- **Code Repository:** GitHub (Invoice Registry)
-- **Bug Reports:** Use thumbs-down in chat or create GitHub issue
-
----
-
-## Changelog
-
-| Version | Date | Changes |
-|---|---|---|
-| 1.0.0 | June 2026 | Initial release: 10 tasks + 4 bonuses complete |
-
----
-
-## License
-
-[Specify your license: MIT, Apache 2.0, etc.]
-
----
 
 **Last Reviewed:** June 29, 2026  
 **Status:** Production Ready ✅
