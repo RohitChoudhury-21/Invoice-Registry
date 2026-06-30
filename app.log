@@ -1,0 +1,79 @@
+2026-06-30 13:05:14 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 13:05:14,504 [INFO] ✅ Database initialization complete
+2026-06-30 13:05:14 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 13:05:14,505 [INFO] 🚀 Application started - Database ready
+2026-06-30 13:09:37 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 13:09:37,523 [INFO] ✅ Database initialization complete
+2026-06-30 13:09:37 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 13:09:37,524 [INFO] 🚀 Application started - Database ready
+2026-06-30 13:10:52 [INFO] app.db: Syncing existing invoices into FTS5 index...
+2026-06-30 13:10:52,976 [INFO] Syncing existing invoices into FTS5 index...
+2026-06-30 13:10:52 [INFO] app.db: ✅ FTS5 index synced successfully
+2026-06-30 13:10:52,977 [INFO] ✅ FTS5 index synced successfully
+2026-06-30 13:10:52 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 13:10:52,977 [INFO] ✅ Database initialization complete
+2026-06-30 13:10:52 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 13:10:52,977 [INFO] 🚀 Application started - Database ready
+2026-06-30 13:10:53,000 [INFO] 4 changes detected
+2026-06-30 13:10:53,610 [INFO] 1 change detected
+2026-06-30 13:10:54,324 [INFO] 1 change detected
+2026-06-30 13:10:54,685 [INFO] 1 change detected
+2026-06-30 13:10:55,039 [INFO] 1 change detected
+2026-06-30 13:10:55,404 [INFO] 1 change detected
+2026-06-30 13:10:55,757 [INFO] 1 change detected
+2026-06-30 13:10:56,110 [INFO] 1 change detected
+2026-06-30 13:10:56,470 [INFO] 1 change detected
+2026-06-30 13:10:56,830 [INFO] 1 change detected
+2026-06-30 13:10:57,189 [INFO] 1 change detected
+2026-06-30 13:10:57,547 [INFO] 1 change detected
+2026-06-30 13:10:57,903 [INFO] 1 change detected
+2026-06-30 13:10:58,256 [INFO] 1 change detected
+2026-06-30 13:10:58,612 [INFO] 1 change detected
+2026-06-30 13:10:58,978 [INFO] 1 change detected
+2026-06-30 13:10:59,337 [INFO] 1 change detected
+2026-06-30 13:10:59,690 [INFO] 1 change detected
+2026-06-30 13:11:00,053 [INFO] 1 change detected
+2026-06-30 13:11:00,413 [INFO] 1 change detected
+2026-06-30 13:11:00,768 [INFO] 1 change detected
+2026-06-30 13:11:01,126 [INFO] 1 change detected
+2026-06-30 13:11:01,487 [INFO] 1 change detected
+2026-06-30 13:11:01,839 [INFO] 1 change detected
+2026-06-30 13:11:02,200 [INFO] 1 change detected
+2026-06-30 13:11:02,560 [INFO] 1 change detected
+2026-06-30 13:11:02,913 [INFO] 1 change detected
+2026-06-30 13:11:03,277 [INFO] 1 change detected
+2026-06-30 13:11:03,638 [INFO] 1 change detected
+2026-06-30 13:11:03,993 [INFO] 1 change detected
+2026-06-30 13:11:04,345 [INFO] 1 change detected
+2026-06-30 13:11:04,696 [INFO] 1 change detected
+2026-06-30 13:11:05,062 [INFO] 1 change detected
+2026-06-30 13:11:05,429 [INFO] 1 change detected
+2026-06-30 13:11:05,783 [INFO] 1 change detected
+2026-06-30 13:11:06,139 [INFO] 1 change detected
+2026-06-30 13:11:06,497 [INFO] 1 change detected
+2026-06-30 13:11:06,856 [INFO] 1 change detected
+2026-06-30 13:11:07,216 [INFO] 1 change detected
+2026-06-30 13:11:07,571 [INFO] 1 change detected
+2026-06-30 13:11:07,935 [INFO] 1 change detected
+2026-06-30 13:11:08,297 [INFO] 1 change detected
+2026-06-30 13:11:08,651 [INFO] 1 change detected
+2026-06-30 13:11:43 [INFO] app.db: Syncing existing invoices into FTS5 index...
+2026-06-30 13:11:43,013 [INFO] Syncing existing invoices into FTS5 index...
+2026-06-30 13:11:43 [INFO] app.db: ✅ FTS5 index synced successfully
+2026-06-30 13:11:43,014 [INFO] ✅ FTS5 index synced successfully
+2026-06-30 13:11:43 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 13:11:43,014 [INFO] ✅ Database initialization complete
+2026-06-30 13:11:43 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 13:11:43,015 [INFO] 🚀 Application started - Database ready
+2026-06-30 13:12:05 [INFO] app.db: Document saved | ID: 1 | 1.pdf | processed
+2026-06-30 13:12:05,026 [INFO] Document saved | ID: 1 | 1.pdf | processed
+2026-06-30 13:12:05 [INFO] app.db: Invoice created | ID: 1 | INV-4471
+2026-06-30 13:12:05,050 [INFO] Invoice created | ID: 1 | INV-4471
+2026-06-30 13:12:20 [INFO] app.db: Document saved | ID: 2 | 3.pdf | processed
+2026-06-30 13:12:20,826 [INFO] Document saved | ID: 2 | 3.pdf | processed
+2026-06-30 13:12:20 [INFO] app.db: Content duplicate caught | Invoice ID: 1
+2026-06-30 13:12:20,829 [INFO] Content duplicate caught | Invoice ID: 1
+2026-06-30 13:12:58 [INFO] app.db: Document saved | ID: 3 | 4.pdf | processed
+2026-06-30 13:12:58,847 [INFO] Document saved | ID: 3 | 4.pdf | processed
+2026-06-30 13:12:58 [INFO] app.db: Invoice created | ID: 2 | INV-4480
+2026-06-30 13:12:58,864 [INFO] Invoice created | ID: 2 | INV-4480
