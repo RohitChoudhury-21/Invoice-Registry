@@ -69,10 +69,10 @@ export async function fetchStats() {
 
 // Update Invoice Status
 export async function updateInvoiceStatus(id, status) {
-    const response = await fetch(`${API_BASE}/invoices/${id}/status`, {
+    const response = await fetch(`${API_BASE}/invoices/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ status: status })
+        body: JSON.stringify({ review_status: status })
     });
     
     if (!response.ok) throw new Error("Failed to update status");

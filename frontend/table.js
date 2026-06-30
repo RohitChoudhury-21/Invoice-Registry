@@ -47,7 +47,7 @@ export function renderInvoiceTable(invoices) {
             try {
                 const result = await updateInvoiceStatus(invoiceId, "approved");
                 const statusCell = e.target.closest('tr').querySelector('.status-cell');
-                statusCell.innerText = result.new_status;
+                statusCell.innerText = result.review_status;
                 statusCell.style.color = "green";
             } catch (error) {
                 alert("Failed to approve invoice.");
@@ -63,7 +63,7 @@ export function renderInvoiceTable(invoices) {
             try {
                 const result = await updateInvoiceStatus(invoiceId, "rejected");
                 const statusCell = e.target.closest('tr').querySelector('.status-cell');
-                statusCell.innerText = result.new_status;
+                statusCell.innerText = result.review_status;
                 statusCell.style.color = "red";
             } catch (error) {
                 alert("Failed to reject invoice.");

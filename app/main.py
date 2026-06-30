@@ -37,11 +37,11 @@ class InvoiceUpdate(BaseModel):
     invoice_date_raw: Optional[str] = None
     total_amount_raw: Optional[str] = None
     currency: Optional[str] = None
+    review_status: Optional[ReviewStatus] = None
 
-class MergeDuplicateResponse(BaseModel):
-    message: str
-    primary_invoice_id: int
-    duplicate_invoice_id: int
+class ResolveDuplicatePayload(BaseModel):
+    action: str  
+    winner_id: Optional[int] = None
 
 def invoice_to_dict(invoice):
     return {
@@ -125,6 +125,10 @@ def get_db():
         yield db
     finally:
         db.close()
+
+@app.get("/stats")
+def stats(db: Session = Depends(get_db)):
+    return get_stats(db)
 
 @app.post("/upload", responses={409: {"description": "Duplicate file"}})
 async def upload_document(file: UploadFile, db: Session = Depends(get_db)):
@@ -247,18 +251,6 @@ def list_documents(
         ]
     }
 
-@app.post("/invoices/{invoice_id}/restore")
-def restore_invoice_route(invoice_id: int, db: Session = Depends(get_db)):
-    success = restore_invoice(db, invoice_id)
-    
-    if not success:
-        # We raise a 404 if it wasn't found or if it wasn't actually deleted
-        raise HTTPException(
-            status_code=404, 
-            detail="Invoice not found or not currently in deleted state"
-        )
-    
-    return {"message": "Invoice restored successfully"}
 
 @app.get("/documents/{doc_id}")
 def get_single_document(doc_id: int, db: Session = Depends(get_db)):
@@ -273,9 +265,6 @@ def get_single_document(doc_id: int, db: Session = Depends(get_db)):
         "uploaded_at": doc.uploaded_at.isoformat()
     }
 
-@app.get("/stats")
-def stats(db: Session = Depends(get_db)):
-    return get_stats(db)
 
 @app.get("/invoices")
 def list_invoices(
@@ -342,12 +331,73 @@ def get_single_invoice(
     ]
     return data
 
+
+@app.patch("/invoices/{invoice_id}")
+def edit_invoice(
+    invoice_id: int,
+    update: InvoiceUpdate,
+    db: Session = Depends(get_db)
+):
+    """Edit invoice fields and re-clean the normalized values."""
+    invoice = get_invoice_by_id(db, invoice_id, include_deleted=True)
+    
+    if not invoice:
+        raise HTTPException(status_code=404, detail="Invoice not found")
+    # Update vendor if provided
+    if update.vendor_name is not None:
+        invoice.vendor_name = update.vendor_name
+        invoice.vendor_normalized = normalize_vendor(update.vendor_name)
+    
+    # Update currency if provided
+    if update.currency is not None:
+        invoice.currency = update.currency.upper()
+    
+    # Update date if provided
+    if update.invoice_date_raw is not None:
+        invoice.invoice_date_raw = update.invoice_date_raw
+        try:
+            invoice.invoice_date = parse_invoice_date(update.invoice_date_raw)
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=f"Could not parse date: {str(e)}")
+    
+    # Update amount if provided
+    if update.total_amount_raw is not None:
+        invoice.total_amount_raw = update.total_amount_raw
+        try:
+            amount, detected_currency = parse_amount(update.total_amount_raw)
+            invoice.total_amount = amount
+            if not invoice.currency:
+                invoice.currency = detected_currency
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=f"Could not parse amount: {str(e)}")
+    if update.review_status is not None:
+        invoice.review_status = update.review_status
+
+    db.commit()
+    db.refresh(invoice)
+    
+    return invoice_to_dict(invoice)
+
 @app.delete("/invoices/{invoice_id}")
 def delete_invoice(invoice_id: int, db: Session = Depends(get_db)):
     invoice = soft_delete_invoice(db, invoice_id)
     if not invoice:
         raise HTTPException(status_code=404, detail="Invoice not found")
     return {"id": invoice.id, "deleted_at": invoice.deleted_at.isoformat(), "status": "deleted"}
+
+@app.post("/invoices/{invoice_id}/restore")
+def restore_invoice_route(invoice_id: int, db: Session = Depends(get_db)):
+    success = restore_invoice(db, invoice_id)
+    
+    if not success:
+        # We raise a 404 if it wasn't found or if it wasn't actually deleted
+        raise HTTPException(
+            status_code=404, 
+            detail="Invoice not found or not currently in deleted state"
+        )
+    
+    return {"message": "Invoice restored successfully"}
+
 
 @app.get("/duplicates")
 def get_duplicates(db: Session = Depends(get_db)):
@@ -363,6 +413,51 @@ def get_duplicates(db: Session = Depends(get_db)):
     }
     for d in duplicates
 ]
+
+@app.post("/duplicates/{candidate_id}/resolve")
+def resolve_duplicate(
+    candidate_id: int,
+    payload: ResolveDuplicatePayload,
+    db: Session = Depends(get_db)
+):
+    """Unified endpoint to merge or dismiss duplicate invoice candidates."""
+    candidate = db.query(DuplicateCandidate).filter(DuplicateCandidate.id == candidate_id).first()
+    if not candidate:
+        raise HTTPException(status_code=404, detail="Duplicate candidate pair not found")
+
+    if payload.action == "merge":
+        if not payload.winner_id:
+            raise HTTPException(status_code=400, detail="winner_id is required to perform a merge")
+        
+        # Determine primary vs duplicate based on user selection
+        if payload.winner_id == candidate.invoice1_id:
+            primary_id, duplicate_id = candidate.invoice1_id, candidate.invoice2_id
+        elif payload.winner_id == candidate.invoice2_id:
+            primary_id, duplicate_id = candidate.invoice2_id, candidate.invoice1_id
+        else:
+            raise HTTPException(status_code=400, detail="winner_id must match one of the candidate invoices")
+
+        try:
+            # Executes the heavy-lifting merge function from your db.py file
+            merge_invoices(db, primary_id, duplicate_id)
+            candidate.status = DuplicateStatus.MERGED
+            db.commit()
+            return {
+                "status": "success",
+                "message": "Invoices successfully merged", 
+                "primary_invoice_id": primary_id, 
+                "duplicate_invoice_id": duplicate_id
+            }
+        except ValueError as e:
+            raise HTTPException(status_code=400, detail=str(e))
+
+    elif payload.action == "not_duplicate":
+        candidate.status = DuplicateStatus.NOT_DUPLICATE
+        db.commit()
+        return {"status": "success", "message": "Marked as not a duplicate", "candidate_id": candidate.id}
+
+    else:
+        raise HTTPException(status_code=400, detail="Invalid action. Use 'merge' or 'not_duplicate'")
 
 @app.get("/export")
 def export_invoices(
@@ -426,72 +521,6 @@ def export_invoices(
         headers={"Content-Disposition": "attachment; filename=invoices.csv"}
     )
 
-@app.patch("/invoices/{invoice_id}/status")
-def update_invoice_status(invoice_id: int, update: InvoiceStatusUpdate, db: Session = Depends(get_db)):
-    # 1. Fetch the invoice
-    invoice = db.query(Invoice).filter(Invoice.id == invoice_id).first()
-    
-    if not invoice:
-        raise HTTPException(status_code=404, detail="Invoice not found")
-    
-    # 2. Convert string input to Enum object
-    try:
-        new_status = ReviewStatus(update.status)
-    except ValueError:
-        raise HTTPException(status_code=400, detail=f"Invalid status. Must be one of: {[s.value for s in ReviewStatus]}")
-
-    # 3. Update using the Enum object (new_status), not the string (update.status)
-    invoice.review_status = new_status
-    db.commit()
-    db.refresh(invoice)
-    
-    # 4. Return the .value so the JSON response is a string
-    return {"message": "Status updated successfully", "new_status": invoice.review_status.value}
-
-@app.patch("/invoices/{invoice_id}")
-def edit_invoice(
-    invoice_id: int,
-    update: InvoiceUpdate,
-    db: Session = Depends(get_db)
-):
-    """Edit invoice fields and re-clean the normalized values."""
-    invoice = get_invoice_by_id(db, invoice_id, include_deleted=True)
-    
-    if not invoice:
-        raise HTTPException(status_code=404, detail="Invoice not found")
-    
-    # Update vendor if provided
-    if update.vendor_name is not None:
-        invoice.vendor_name = update.vendor_name
-        invoice.vendor_normalized = normalize_vendor(update.vendor_name)
-    
-    # Update currency if provided
-    if update.currency is not None:
-        invoice.currency = update.currency.upper()
-    
-    # Update date if provided
-    if update.invoice_date_raw is not None:
-        invoice.invoice_date_raw = update.invoice_date_raw
-        try:
-            invoice.invoice_date = parse_invoice_date(update.invoice_date_raw)
-        except Exception as e:
-            raise HTTPException(status_code=400, detail=f"Could not parse date: {str(e)}")
-    
-    # Update amount if provided
-    if update.total_amount_raw is not None:
-        invoice.total_amount_raw = update.total_amount_raw
-        try:
-            amount, detected_currency = parse_amount(update.total_amount_raw)
-            invoice.total_amount = amount
-            if not invoice.currency:
-                invoice.currency = detected_currency
-        except Exception as e:
-            raise HTTPException(status_code=400, detail=f"Could not parse amount: {str(e)}")
-    
-    db.commit()
-    db.refresh(invoice)
-    
-    return invoice_to_dict(invoice)
 
 @app.get("/admin/optimize-search")
 async def run_optimization():
@@ -500,93 +529,5 @@ async def run_optimization():
         return {"status": "success", "message": "Index optimized successfully"}
     except Exception as e:
         return {"status": "error", "message": str(e)}
-
-@app.post("/duplicates/{candidate_id}/merge")
-def merge_duplicate(
-    candidate_id: int,
-    db: Session = Depends(get_db),
-):
-    candidate = (
-        db.query(DuplicateCandidate)
-        .filter(DuplicateCandidate.id == candidate_id)
-        .first()
-    )
-
-    if not candidate:
-        raise HTTPException(
-            status_code=404,
-            detail="Duplicate candidate not found",
-        )
-
-    merge_invoices(
-        db,
-        candidate.invoice1_id,
-        candidate.invoice2_id,
-    )
-
-    candidate.status = DuplicateStatus.MERGED
-    db.commit()
-
-    return MergeDuplicateResponse(
-        message="Invoices merged successfully",
-        primary_invoice_id=candidate.invoice1_id,
-        duplicate_invoice_id=candidate.invoice2_id,
-    )
-
-@app.post("/duplicates/{candidate_id}/dismiss")
-def dismiss_duplicate(
-    candidate_id: int,
-    db: Session = Depends(get_db)
-):
-    """Mark a duplicate candidate as 'not a duplicate' without merging."""
-    candidate = db.query(DuplicateCandidate).filter(
-        DuplicateCandidate.id == candidate_id
-    ).first()
-    
-    if not candidate:
-        raise HTTPException(status_code=404, detail="Duplicate candidate not found")
-    
-    candidate.status = "not_duplicate"
-    db.commit()
-    
-    return {
-        "message": "Marked as not a duplicate",
-        "candidate_id": candidate.id,
-        "status": candidate.status
-    }
-
-@app.post("/invoices/{invoice_id}/verify-line-items")
-def verify_line_items_endpoint(invoice_id: int, db: Session = Depends(get_db)):
-    """Manually verify line items for an invoice by fetching its documents and re-extracting text."""
-    invoice = get_invoice_by_id(db, invoice_id, include_deleted=True)
-    
-    if not invoice:
-        raise HTTPException(status_code=404, detail="Invoice not found")
-    
-    if not invoice.documents:
-        raise HTTPException(status_code=400, detail="Invoice has no linked documents")
-    
-    # Extract text from the first document
-    doc = invoice.documents[0]
-    
-    try:
-        doc_obj = get_document_by_id(db, doc.id)
-        if not doc_obj:
-            raise HTTPException(status_code=404, detail="Document not found")
-        
-        # We don't have the original file bytes anymore, so we'll just mark as checked
-        # In a real system, you'd re-read the file or store the extracted text
-        import re
-        from decimal import Decimal
-        
-        amounts = re.findall(r'[\$€£]?\s*(\d+[.,]\d{2})', "")  # Would need original text
-        
-        invoice.line_items_verified = True  # Placeholder
-        db.commit()
-        
-        return {"message": "Line items verified", "verified": True}
-    
-    except Exception as e:
-        return {"message": f"Error: {str(e)}", "verified": False}
 
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")

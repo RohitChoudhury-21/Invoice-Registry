@@ -551,13 +551,18 @@ def get_invoices(
     
     if search:
         if search_type.lower() == "fts":
+            if search:
+                sanitized_term = '"' + search.replace('"', '""') + '"'
+            else:
+                sanitized_term = search
+
             ids = session.execute(
                 text("""
                     SELECT id
                     FROM invoice_search
                     WHERE invoice_search MATCH :term
                 """),
-                {"term": search},
+                {"term": sanitized_term},  # Safely sanitized
             ).scalars().all()
 
             if not ids:

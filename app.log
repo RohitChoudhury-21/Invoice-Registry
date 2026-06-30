@@ -77,3 +77,524 @@
 2026-06-30 13:12:58,847 [INFO] Document saved | ID: 3 | 4.pdf | processed
 2026-06-30 13:12:58 [INFO] app.db: Invoice created | ID: 2 | INV-4480
 2026-06-30 13:12:58,864 [INFO] Invoice created | ID: 2 | INV-4480
+2026-06-30 14:54:19 [INFO] app.db: Syncing existing invoices into FTS5 index...
+2026-06-30 14:54:19,595 [INFO] Syncing existing invoices into FTS5 index...
+2026-06-30 14:54:19 [INFO] app.db: ✅ FTS5 index synced successfully
+2026-06-30 14:54:19,596 [INFO] ✅ FTS5 index synced successfully
+2026-06-30 14:54:19 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 14:54:19,596 [INFO] ✅ Database initialization complete
+2026-06-30 14:54:19 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 14:54:19,596 [INFO] 🚀 Application started - Database ready
+2026-06-30 14:57:02 [INFO] app.db: Document saved | ID: 1 | 1.pdf | processed
+2026-06-30 14:57:02,309 [INFO] Document saved | ID: 1 | 1.pdf | processed
+2026-06-30 14:57:02 [INFO] app.db: Invoice created | ID: 1 | INV-4471
+2026-06-30 14:57:02,337 [INFO] Invoice created | ID: 1 | INV-4471
+2026-06-30 15:02:14,618 [INFO] 1 change detected
+2026-06-30 15:02:16,226 [INFO] 5 changes detected
+2026-06-30 15:02:17 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 15:02:17,699 [INFO] ✅ Database initialization complete
+2026-06-30 15:02:17 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 15:02:17,699 [INFO] 🚀 Application started - Database ready
+2026-06-30 15:03:27,014 [INFO] 1 change detected
+2026-06-30 15:03:27,938 [INFO] 5 changes detected
+2026-06-30 15:03:28 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 15:03:28,786 [INFO] ✅ Database initialization complete
+2026-06-30 15:03:28 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 15:03:28,787 [INFO] 🚀 Application started - Database ready
+2026-06-30 15:09:27,712 [INFO] 1 change detected
+2026-06-30 15:09:28,802 [INFO] 5 changes detected
+2026-06-30 15:09:30 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 15:09:30,059 [INFO] ✅ Database initialization complete
+2026-06-30 15:09:30 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 15:09:30,060 [INFO] 🚀 Application started - Database ready
+2026-06-30 15:12:47,756 [INFO] 1 change detected
+2026-06-30 15:12:48,881 [INFO] 5 changes detected
+2026-06-30 15:12:50 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 15:12:50,190 [INFO] ✅ Database initialization complete
+2026-06-30 15:12:50 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 15:12:50,192 [INFO] 🚀 Application started - Database ready
+2026-06-30 15:13:08 [INFO] app.db: ✅ FTS5 index optimized
+2026-06-30 15:13:08,389 [INFO] ✅ FTS5 index optimized
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 2 | 10.pdf | processed
+2026-06-30 15:14:41,254 [INFO] Document saved | ID: 2 | 10.pdf | processed
+2026-06-30 15:14:41,256 [WARNING] EOF marker not found
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 3 | 100.pdf | processed
+2026-06-30 15:14:41,291 [INFO] Document saved | ID: 3 | 100.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 2 | INV-1828
+2026-06-30 15:14:41,318 [INFO] Invoice created | ID: 2 | INV-1828
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 4 | 101.pdf | processed
+2026-06-30 15:14:41,350 [INFO] Document saved | ID: 4 | 101.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 3 | INV-4538
+2026-06-30 15:14:41,366 [INFO] Invoice created | ID: 3 | INV-4538
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 5 | 102.pdf | processed
+2026-06-30 15:14:41,397 [INFO] Document saved | ID: 5 | 102.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 4 | INV-9850
+2026-06-30 15:14:41,411 [INFO] Invoice created | ID: 4 | INV-9850
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 6 | 103.pdf | processed
+2026-06-30 15:14:41,437 [INFO] Document saved | ID: 6 | 103.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 5 | INV-5347
+2026-06-30 15:14:41,450 [INFO] Invoice created | ID: 5 | INV-5347
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 7 | 104.pdf | processed
+2026-06-30 15:14:41,494 [INFO] Document saved | ID: 7 | 104.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 6 | INV-9543
+2026-06-30 15:14:41,508 [INFO] Invoice created | ID: 6 | INV-9543
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 8 | 105.pdf | processed
+2026-06-30 15:14:41,551 [INFO] Document saved | ID: 8 | 105.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 7 | INV-3067
+2026-06-30 15:14:41,566 [INFO] Invoice created | ID: 7 | INV-3067
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 9 | 106.pdf | processed
+2026-06-30 15:14:41,596 [INFO] Document saved | ID: 9 | 106.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 8 | INV-8398
+2026-06-30 15:14:41,607 [INFO] Invoice created | ID: 8 | INV-8398
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 10 | 107.pdf | processed
+2026-06-30 15:14:41,634 [INFO] Document saved | ID: 10 | 107.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 9 | INV-2494
+2026-06-30 15:14:41,648 [INFO] Invoice created | ID: 9 | INV-2494
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 11 | 108.pdf | processed
+2026-06-30 15:14:41,675 [INFO] Document saved | ID: 11 | 108.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 10 | INV-3002
+2026-06-30 15:14:41,686 [INFO] Invoice created | ID: 10 | INV-3002
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 12 | 109.pdf | processed
+2026-06-30 15:14:41,722 [INFO] Document saved | ID: 12 | 109.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 11 | INV-2773
+2026-06-30 15:14:41,732 [INFO] Invoice created | ID: 11 | INV-2773
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 13 | 11.pdf | processed
+2026-06-30 15:14:41,762 [INFO] Document saved | ID: 13 | 11.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 12 | INV-5560
+2026-06-30 15:14:41,773 [INFO] Invoice created | ID: 12 | INV-5560
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 14 | 110.pdf | processed
+2026-06-30 15:14:41,801 [INFO] Document saved | ID: 14 | 110.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 13 | INV-1430
+2026-06-30 15:14:41,813 [INFO] Invoice created | ID: 13 | INV-1430
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 15 | 111.pdf | processed
+2026-06-30 15:14:41,838 [INFO] Document saved | ID: 15 | 111.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 14 | INV-3324
+2026-06-30 15:14:41,850 [INFO] Invoice created | ID: 14 | INV-3324
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 16 | 112.pdf | processed
+2026-06-30 15:14:41,877 [INFO] Document saved | ID: 16 | 112.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 15 | INV-3579
+2026-06-30 15:14:41,889 [INFO] Invoice created | ID: 15 | INV-3579
+2026-06-30 15:14:41 [INFO] app.db: Document saved | ID: 17 | 113.pdf | processed
+2026-06-30 15:14:41,952 [INFO] Document saved | ID: 17 | 113.pdf | processed
+2026-06-30 15:14:41 [INFO] app.db: Invoice created | ID: 16 | INV-5640
+2026-06-30 15:14:41,977 [INFO] Invoice created | ID: 16 | INV-5640
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 18 | 114.pdf | processed
+2026-06-30 15:14:42,005 [INFO] Document saved | ID: 18 | 114.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 17 | INV-1125
+2026-06-30 15:14:42,020 [INFO] Invoice created | ID: 17 | INV-1125
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 19 | 115.pdf | processed
+2026-06-30 15:14:42,044 [INFO] Document saved | ID: 19 | 115.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 18 | INV-4770
+2026-06-30 15:14:42,058 [INFO] Invoice created | ID: 18 | INV-4770
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 20 | 116.pdf | processed
+2026-06-30 15:14:42,085 [INFO] Document saved | ID: 20 | 116.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 19 | INV-2887
+2026-06-30 15:14:42,096 [INFO] Invoice created | ID: 19 | INV-2887
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 21 | 117.pdf | processed
+2026-06-30 15:14:42,122 [INFO] Document saved | ID: 21 | 117.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 20 | INV-6083
+2026-06-30 15:14:42,139 [INFO] Invoice created | ID: 20 | INV-6083
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 22 | 118.pdf | processed
+2026-06-30 15:14:42,168 [INFO] Document saved | ID: 22 | 118.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 21 | INV-9355
+2026-06-30 15:14:42,178 [INFO] Invoice created | ID: 21 | INV-9355
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 23 | 119.pdf | processed
+2026-06-30 15:14:42,205 [INFO] Document saved | ID: 23 | 119.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 22 | INV-2234
+2026-06-30 15:14:42,216 [INFO] Invoice created | ID: 22 | INV-2234
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 24 | 12.pdf | processed
+2026-06-30 15:14:42,250 [INFO] Document saved | ID: 24 | 12.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 23 | INV-1488
+2026-06-30 15:14:42,265 [INFO] Invoice created | ID: 23 | INV-1488
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 25 | 120.pdf | processed
+2026-06-30 15:14:42,295 [INFO] Document saved | ID: 25 | 120.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 24 | INV-5500
+2026-06-30 15:14:42,308 [INFO] Invoice created | ID: 24 | INV-5500
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 26 | 13.pdf | processed
+2026-06-30 15:14:42,335 [INFO] Document saved | ID: 26 | 13.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 25 | INV-5557
+2026-06-30 15:14:42,352 [INFO] Invoice created | ID: 25 | INV-5557
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 27 | 14.pdf | processed
+2026-06-30 15:14:42,381 [INFO] Document saved | ID: 27 | 14.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 26 | INV-6881
+2026-06-30 15:14:42,397 [INFO] Invoice created | ID: 26 | INV-6881
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 28 | 15.pdf | processed
+2026-06-30 15:14:42,424 [INFO] Document saved | ID: 28 | 15.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 27 | INV-5803
+2026-06-30 15:14:42,437 [INFO] Invoice created | ID: 27 | INV-5803
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 29 | 16.pdf | processed
+2026-06-30 15:14:42,464 [INFO] Document saved | ID: 29 | 16.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 28 | INV-4814
+2026-06-30 15:14:42,477 [INFO] Invoice created | ID: 28 | INV-4814
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 30 | 17.pdf | processed
+2026-06-30 15:14:42,508 [INFO] Document saved | ID: 30 | 17.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 29 | INV-3803
+2026-06-30 15:14:42,524 [INFO] Invoice created | ID: 29 | INV-3803
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 31 | 18.pdf | processed
+2026-06-30 15:14:42,550 [INFO] Document saved | ID: 31 | 18.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 30 | INV-1525
+2026-06-30 15:14:42,565 [INFO] Invoice created | ID: 30 | INV-1525
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 32 | 19.pdf | processed
+2026-06-30 15:14:42,592 [INFO] Document saved | ID: 32 | 19.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 31 | INV-9830
+2026-06-30 15:14:42,605 [INFO] Invoice created | ID: 31 | INV-9830
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 33 | 20.pdf | processed
+2026-06-30 15:14:42,651 [INFO] Document saved | ID: 33 | 20.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 32 | INV-1771
+2026-06-30 15:14:42,663 [INFO] Invoice created | ID: 32 | INV-1771
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 34 | 21.pdf | processed
+2026-06-30 15:14:42,691 [INFO] Document saved | ID: 34 | 21.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 33 | INV-9669
+2026-06-30 15:14:42,705 [INFO] Invoice created | ID: 33 | INV-9669
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 35 | 22.pdf | processed
+2026-06-30 15:14:42,731 [INFO] Document saved | ID: 35 | 22.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 34 | INV-5315
+2026-06-30 15:14:42,746 [INFO] Invoice created | ID: 34 | INV-5315
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 36 | 23.pdf | processed
+2026-06-30 15:14:42,775 [INFO] Document saved | ID: 36 | 23.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 35 | INV-1009
+2026-06-30 15:14:42,789 [INFO] Invoice created | ID: 35 | INV-1009
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 37 | 24.pdf | processed
+2026-06-30 15:14:42,817 [INFO] Document saved | ID: 37 | 24.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 36 | INV-2133
+2026-06-30 15:14:42,828 [INFO] Invoice created | ID: 36 | INV-2133
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 38 | 25.pdf | processed
+2026-06-30 15:14:42,858 [INFO] Document saved | ID: 38 | 25.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 37 | INV-9835
+2026-06-30 15:14:42,869 [INFO] Invoice created | ID: 37 | INV-9835
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 39 | 26.pdf | processed
+2026-06-30 15:14:42,895 [INFO] Document saved | ID: 39 | 26.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 38 | INV-4770
+2026-06-30 15:14:42,908 [INFO] Invoice created | ID: 38 | INV-4770
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 40 | 27.pdf | processed
+2026-06-30 15:14:42,936 [INFO] Document saved | ID: 40 | 27.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 39 | INV-4899
+2026-06-30 15:14:42,947 [INFO] Invoice created | ID: 39 | INV-4899
+2026-06-30 15:14:42 [INFO] app.db: Document saved | ID: 41 | 28.pdf | processed
+2026-06-30 15:14:42,974 [INFO] Document saved | ID: 41 | 28.pdf | processed
+2026-06-30 15:14:42 [INFO] app.db: Invoice created | ID: 40 | INV-1887
+2026-06-30 15:14:42,984 [INFO] Invoice created | ID: 40 | INV-1887
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 42 | 29.pdf | processed
+2026-06-30 15:14:43,016 [INFO] Document saved | ID: 42 | 29.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 41 | INV-8350
+2026-06-30 15:14:43,029 [INFO] Invoice created | ID: 41 | INV-8350
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 43 | 3.pdf | processed
+2026-06-30 15:14:43,057 [INFO] Document saved | ID: 43 | 3.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Content duplicate caught | Invoice ID: 1
+2026-06-30 15:14:43,060 [INFO] Content duplicate caught | Invoice ID: 1
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 44 | 30.pdf | processed
+2026-06-30 15:14:43,092 [INFO] Document saved | ID: 44 | 30.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 42 | INV-1828
+2026-06-30 15:14:43,105 [INFO] Invoice created | ID: 42 | INV-1828
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 45 | 31.pdf | processed
+2026-06-30 15:14:43,131 [INFO] Document saved | ID: 45 | 31.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 43 | INV-1960
+2026-06-30 15:14:43,143 [INFO] Invoice created | ID: 43 | INV-1960
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 46 | 32.pdf | processed
+2026-06-30 15:14:43,169 [INFO] Document saved | ID: 46 | 32.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 44 | INV-1958
+2026-06-30 15:14:43,181 [INFO] Invoice created | ID: 44 | INV-1958
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 47 | 33.pdf | processed
+2026-06-30 15:14:43,208 [INFO] Document saved | ID: 47 | 33.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 45 | INV-9701
+2026-06-30 15:14:43,219 [INFO] Invoice created | ID: 45 | INV-9701
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 48 | 34.pdf | processed
+2026-06-30 15:14:43,245 [INFO] Document saved | ID: 48 | 34.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 46 | INV-2343
+2026-06-30 15:14:43,274 [INFO] Invoice created | ID: 46 | INV-2343
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 49 | 35.pdf | processed
+2026-06-30 15:14:43,301 [INFO] Document saved | ID: 49 | 35.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 47 | INV-6180
+2026-06-30 15:14:43,315 [INFO] Invoice created | ID: 47 | INV-6180
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 50 | 36.pdf | processed
+2026-06-30 15:14:43,342 [INFO] Document saved | ID: 50 | 36.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 48 | INV-3170
+2026-06-30 15:14:43,354 [INFO] Invoice created | ID: 48 | INV-3170
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 51 | 37.pdf | processed
+2026-06-30 15:14:43,383 [INFO] Document saved | ID: 51 | 37.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 49 | INV-9666
+2026-06-30 15:14:43,395 [INFO] Invoice created | ID: 49 | INV-9666
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 52 | 38.pdf | processed
+2026-06-30 15:14:43,424 [INFO] Document saved | ID: 52 | 38.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 50 | INV-6617
+2026-06-30 15:14:43,435 [INFO] Invoice created | ID: 50 | INV-6617
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 53 | 39.pdf | processed
+2026-06-30 15:14:43,464 [INFO] Document saved | ID: 53 | 39.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 51 | INV-5533
+2026-06-30 15:14:43,477 [INFO] Invoice created | ID: 51 | INV-5533
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 54 | 4.pdf | processed
+2026-06-30 15:14:43,507 [INFO] Document saved | ID: 54 | 4.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 52 | INV-4480
+2026-06-30 15:14:43,519 [INFO] Invoice created | ID: 52 | INV-4480
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 55 | 40.pdf | processed
+2026-06-30 15:14:43,546 [INFO] Document saved | ID: 55 | 40.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 53 | INV-2832
+2026-06-30 15:14:43,558 [INFO] Invoice created | ID: 53 | INV-2832
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 56 | 41.pdf | processed
+2026-06-30 15:14:43,586 [INFO] Document saved | ID: 56 | 41.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 54 | INV-6862
+2026-06-30 15:14:43,599 [INFO] Invoice created | ID: 54 | INV-6862
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 57 | 42.pdf | processed
+2026-06-30 15:14:43,628 [INFO] Document saved | ID: 57 | 42.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 55 | INV-6442
+2026-06-30 15:14:43,640 [INFO] Invoice created | ID: 55 | INV-6442
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 58 | 43.pdf | processed
+2026-06-30 15:14:43,668 [INFO] Document saved | ID: 58 | 43.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 56 | INV-8541
+2026-06-30 15:14:43,681 [INFO] Invoice created | ID: 56 | INV-8541
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 59 | 44.pdf | processed
+2026-06-30 15:14:43,707 [INFO] Document saved | ID: 59 | 44.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 57 | INV-1452
+2026-06-30 15:14:43,719 [INFO] Invoice created | ID: 57 | INV-1452
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 60 | 45.pdf | processed
+2026-06-30 15:14:43,745 [INFO] Document saved | ID: 60 | 45.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 58 | INV-6139
+2026-06-30 15:14:43,757 [INFO] Invoice created | ID: 58 | INV-6139
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 61 | 46.pdf | processed
+2026-06-30 15:14:43,783 [INFO] Document saved | ID: 61 | 46.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 59 | INV-8066
+2026-06-30 15:14:43,796 [INFO] Invoice created | ID: 59 | INV-8066
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 62 | 47.pdf | processed
+2026-06-30 15:14:43,827 [INFO] Document saved | ID: 62 | 47.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 60 | INV-7211
+2026-06-30 15:14:43,839 [INFO] Invoice created | ID: 60 | INV-7211
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 63 | 48.pdf | processed
+2026-06-30 15:14:43,872 [INFO] Document saved | ID: 63 | 48.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 61 | INV-8238
+2026-06-30 15:14:43,889 [INFO] Invoice created | ID: 61 | INV-8238
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 64 | 49.pdf | processed
+2026-06-30 15:14:43,930 [INFO] Document saved | ID: 64 | 49.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 62 | INV-2530
+2026-06-30 15:14:43,946 [INFO] Invoice created | ID: 62 | INV-2530
+2026-06-30 15:14:43 [INFO] app.db: Document saved | ID: 65 | 5.pdf | processed
+2026-06-30 15:14:43,984 [INFO] Document saved | ID: 65 | 5.pdf | processed
+2026-06-30 15:14:43 [INFO] app.db: Invoice created | ID: 63 | INV-4417
+2026-06-30 15:14:43,997 [INFO] Invoice created | ID: 63 | INV-4417
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 66 | 50.pdf | processed
+2026-06-30 15:14:44,023 [INFO] Document saved | ID: 66 | 50.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 64 | INV-2193
+2026-06-30 15:14:44,037 [INFO] Invoice created | ID: 64 | INV-2193
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 67 | 51.pdf | processed
+2026-06-30 15:14:44,061 [INFO] Document saved | ID: 67 | 51.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 65 | INV-9486
+2026-06-30 15:14:44,074 [INFO] Invoice created | ID: 65 | INV-9486
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 68 | 52.pdf | processed
+2026-06-30 15:14:44,101 [INFO] Document saved | ID: 68 | 52.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 66 | INV-3607
+2026-06-30 15:14:44,114 [INFO] Invoice created | ID: 66 | INV-3607
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 69 | 53.pdf | processed
+2026-06-30 15:14:44,143 [INFO] Document saved | ID: 69 | 53.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 67 | INV-5681
+2026-06-30 15:14:44,154 [INFO] Invoice created | ID: 67 | INV-5681
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 70 | 54.pdf | processed
+2026-06-30 15:14:44,184 [INFO] Document saved | ID: 70 | 54.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 68 | INV-7797
+2026-06-30 15:14:44,196 [INFO] Invoice created | ID: 68 | INV-7797
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 71 | 55.pdf | processed
+2026-06-30 15:14:44,224 [INFO] Document saved | ID: 71 | 55.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 69 | INV-5892
+2026-06-30 15:14:44,235 [INFO] Invoice created | ID: 69 | INV-5892
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 72 | 56.pdf | processed
+2026-06-30 15:14:44,267 [INFO] Document saved | ID: 72 | 56.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 70 | INV-3091
+2026-06-30 15:14:44,279 [INFO] Invoice created | ID: 70 | INV-3091
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 73 | 57.pdf | processed
+2026-06-30 15:14:44,304 [INFO] Document saved | ID: 73 | 57.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 71 | INV-8564
+2026-06-30 15:14:44,316 [INFO] Invoice created | ID: 71 | INV-8564
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 74 | 58.pdf | processed
+2026-06-30 15:14:44,343 [INFO] Document saved | ID: 74 | 58.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 72 | INV-6733
+2026-06-30 15:14:44,364 [INFO] Invoice created | ID: 72 | INV-6733
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 75 | 59.pdf | processed
+2026-06-30 15:14:44,394 [INFO] Document saved | ID: 75 | 59.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 73 | INV-8758
+2026-06-30 15:14:44,406 [INFO] Invoice created | ID: 73 | INV-8758
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 76 | 6.pdf | processed
+2026-06-30 15:14:44,435 [INFO] Document saved | ID: 76 | 6.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 74 | INV-7788
+2026-06-30 15:14:44,446 [INFO] Invoice created | ID: 74 | INV-7788
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 77 | 60.pdf | processed
+2026-06-30 15:14:44,475 [INFO] Document saved | ID: 77 | 60.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 75 | INV-2771
+2026-06-30 15:14:44,485 [INFO] Invoice created | ID: 75 | INV-2771
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 78 | 61.pdf | processed
+2026-06-30 15:14:44,510 [INFO] Document saved | ID: 78 | 61.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 76 | INV-2983
+2026-06-30 15:14:44,521 [INFO] Invoice created | ID: 76 | INV-2983
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 79 | 62.pdf | processed
+2026-06-30 15:14:44,548 [INFO] Document saved | ID: 79 | 62.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 77 | INV-6934
+2026-06-30 15:14:44,560 [INFO] Invoice created | ID: 77 | INV-6934
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 80 | 63.pdf | processed
+2026-06-30 15:14:44,587 [INFO] Document saved | ID: 80 | 63.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 78 | INV-8921
+2026-06-30 15:14:44,601 [INFO] Invoice created | ID: 78 | INV-8921
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 81 | 64.pdf | processed
+2026-06-30 15:14:44,628 [INFO] Document saved | ID: 81 | 64.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 79 | INV-8613
+2026-06-30 15:14:44,649 [INFO] Invoice created | ID: 79 | INV-8613
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 82 | 65.pdf | processed
+2026-06-30 15:14:44,685 [INFO] Document saved | ID: 82 | 65.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 80 | INV-5526
+2026-06-30 15:14:44,698 [INFO] Invoice created | ID: 80 | INV-5526
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 83 | 66.pdf | processed
+2026-06-30 15:14:44,724 [INFO] Document saved | ID: 83 | 66.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 81 | INV-4986
+2026-06-30 15:14:44,734 [INFO] Invoice created | ID: 81 | INV-4986
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 84 | 67.pdf | processed
+2026-06-30 15:14:44,764 [INFO] Document saved | ID: 84 | 67.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 82 | INV-2958
+2026-06-30 15:14:44,775 [INFO] Invoice created | ID: 82 | INV-2958
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 85 | 68.pdf | processed
+2026-06-30 15:14:44,801 [INFO] Document saved | ID: 85 | 68.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 83 | INV-6912
+2026-06-30 15:14:44,818 [INFO] Invoice created | ID: 83 | INV-6912
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 86 | 69.pdf | processed
+2026-06-30 15:14:44,861 [INFO] Document saved | ID: 86 | 69.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 84 | INV-1200
+2026-06-30 15:14:44,884 [INFO] Invoice created | ID: 84 | INV-1200
+2026-06-30 15:14:44 [INFO] app.db: Document saved | ID: 87 | 7.pdf | processed
+2026-06-30 15:14:44,948 [INFO] Document saved | ID: 87 | 7.pdf | processed
+2026-06-30 15:14:44 [INFO] app.db: Invoice created | ID: 85 | INV-7788-R
+2026-06-30 15:14:44,976 [INFO] Invoice created | ID: 85 | INV-7788-R
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 88 | 70.pdf | processed
+2026-06-30 15:14:45,030 [INFO] Document saved | ID: 88 | 70.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 86 | INV-2070
+2026-06-30 15:14:45,046 [INFO] Invoice created | ID: 86 | INV-2070
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 89 | 71.pdf | processed
+2026-06-30 15:14:45,102 [INFO] Document saved | ID: 89 | 71.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 87 | INV-2940
+2026-06-30 15:14:45,122 [INFO] Invoice created | ID: 87 | INV-2940
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 90 | 72.pdf | processed
+2026-06-30 15:14:45,171 [INFO] Document saved | ID: 90 | 72.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 88 | INV-2625
+2026-06-30 15:14:45,186 [INFO] Invoice created | ID: 88 | INV-2625
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 91 | 73.pdf | processed
+2026-06-30 15:14:45,240 [INFO] Document saved | ID: 91 | 73.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 89 | INV-2229
+2026-06-30 15:14:45,261 [INFO] Invoice created | ID: 89 | INV-2229
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 92 | 74.pdf | processed
+2026-06-30 15:14:45,310 [INFO] Document saved | ID: 92 | 74.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 90 | INV-5334
+2026-06-30 15:14:45,329 [INFO] Invoice created | ID: 90 | INV-5334
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 93 | 75.pdf | processed
+2026-06-30 15:14:45,385 [INFO] Document saved | ID: 93 | 75.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 91 | INV-6039
+2026-06-30 15:14:45,400 [INFO] Invoice created | ID: 91 | INV-6039
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 94 | 76.pdf | processed
+2026-06-30 15:14:45,449 [INFO] Document saved | ID: 94 | 76.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 92 | INV-8078
+2026-06-30 15:14:45,465 [INFO] Invoice created | ID: 92 | INV-8078
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 95 | 77.pdf | processed
+2026-06-30 15:14:45,540 [INFO] Document saved | ID: 95 | 77.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 93 | INV-1659
+2026-06-30 15:14:45,559 [INFO] Invoice created | ID: 93 | INV-1659
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 96 | 78.pdf | processed
+2026-06-30 15:14:45,609 [INFO] Document saved | ID: 96 | 78.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 94 | INV-7690
+2026-06-30 15:14:45,623 [INFO] Invoice created | ID: 94 | INV-7690
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 97 | 79.pdf | processed
+2026-06-30 15:14:45,670 [INFO] Document saved | ID: 97 | 79.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 95 | INV-7622
+2026-06-30 15:14:45,684 [INFO] Invoice created | ID: 95 | INV-7622
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 98 | 8.pdf | processed
+2026-06-30 15:14:45,711 [INFO] Document saved | ID: 98 | 8.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 96 | RCP-22119
+2026-06-30 15:14:45,738 [INFO] Invoice created | ID: 96 | RCP-22119
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 99 | 80.pdf | processed
+2026-06-30 15:14:45,766 [INFO] Document saved | ID: 99 | 80.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 97 | INV-5719
+2026-06-30 15:14:45,776 [INFO] Invoice created | ID: 97 | INV-5719
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 100 | 81.pdf | processed
+2026-06-30 15:14:45,804 [INFO] Document saved | ID: 100 | 81.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 98 | INV-2858
+2026-06-30 15:14:45,816 [INFO] Invoice created | ID: 98 | INV-2858
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 101 | 82.pdf | processed
+2026-06-30 15:14:45,847 [INFO] Document saved | ID: 101 | 82.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 99 | INV-3369
+2026-06-30 15:14:45,861 [INFO] Invoice created | ID: 99 | INV-3369
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 102 | 83.pdf | processed
+2026-06-30 15:14:45,889 [INFO] Document saved | ID: 102 | 83.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 100 | INV-9022
+2026-06-30 15:14:45,905 [INFO] Invoice created | ID: 100 | INV-9022
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 103 | 84.pdf | processed
+2026-06-30 15:14:45,932 [INFO] Document saved | ID: 103 | 84.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 101 | INV-7274
+2026-06-30 15:14:45,947 [INFO] Invoice created | ID: 101 | INV-7274
+2026-06-30 15:14:45 [INFO] app.db: Document saved | ID: 104 | 85.pdf | processed
+2026-06-30 15:14:45,974 [INFO] Document saved | ID: 104 | 85.pdf | processed
+2026-06-30 15:14:45 [INFO] app.db: Invoice created | ID: 102 | INV-8213
+2026-06-30 15:14:45,990 [INFO] Invoice created | ID: 102 | INV-8213
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 105 | 86.pdf | processed
+2026-06-30 15:14:46,018 [INFO] Document saved | ID: 105 | 86.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 103 | INV-9742
+2026-06-30 15:14:46,032 [INFO] Invoice created | ID: 103 | INV-9742
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 106 | 87.pdf | processed
+2026-06-30 15:14:46,060 [INFO] Document saved | ID: 106 | 87.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 104 | INV-5708
+2026-06-30 15:14:46,075 [INFO] Invoice created | ID: 104 | INV-5708
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 107 | 88.pdf | processed
+2026-06-30 15:14:46,107 [INFO] Document saved | ID: 107 | 88.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 105 | INV-3385
+2026-06-30 15:14:46,122 [INFO] Invoice created | ID: 105 | INV-3385
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 108 | 89.pdf | processed
+2026-06-30 15:14:46,154 [INFO] Document saved | ID: 108 | 89.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 106 | INV-4945
+2026-06-30 15:14:46,165 [INFO] Invoice created | ID: 106 | INV-4945
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 109 | 9.pdf | processed
+2026-06-30 15:14:46,192 [INFO] Document saved | ID: 109 | 9.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 110 | 90.pdf | processed
+2026-06-30 15:14:46,221 [INFO] Document saved | ID: 110 | 90.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 107 | INV-5901
+2026-06-30 15:14:46,233 [INFO] Invoice created | ID: 107 | INV-5901
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 111 | 91.pdf | processed
+2026-06-30 15:14:46,260 [INFO] Document saved | ID: 111 | 91.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 108 | INV-5847
+2026-06-30 15:14:46,271 [INFO] Invoice created | ID: 108 | INV-5847
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 112 | 92.pdf | processed
+2026-06-30 15:14:46,302 [INFO] Document saved | ID: 112 | 92.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 109 | INV-4770
+2026-06-30 15:14:46,315 [INFO] Invoice created | ID: 109 | INV-4770
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 113 | 93.pdf | processed
+2026-06-30 15:14:46,340 [INFO] Document saved | ID: 113 | 93.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 110 | INV-6977
+2026-06-30 15:14:46,352 [INFO] Invoice created | ID: 110 | INV-6977
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 114 | 94.pdf | processed
+2026-06-30 15:14:46,394 [INFO] Document saved | ID: 114 | 94.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 111 | INV-9221
+2026-06-30 15:14:46,405 [INFO] Invoice created | ID: 111 | INV-9221
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 115 | 95.pdf | processed
+2026-06-30 15:14:46,434 [INFO] Document saved | ID: 115 | 95.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 112 | INV-4696
+2026-06-30 15:14:46,449 [INFO] Invoice created | ID: 112 | INV-4696
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 116 | 96.pdf | processed
+2026-06-30 15:14:46,477 [INFO] Document saved | ID: 116 | 96.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 113 | INV-4830
+2026-06-30 15:14:46,491 [INFO] Invoice created | ID: 113 | INV-4830
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 117 | 97.pdf | processed
+2026-06-30 15:14:46,519 [INFO] Document saved | ID: 117 | 97.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 114 | INV-2592
+2026-06-30 15:14:46,532 [INFO] Invoice created | ID: 114 | INV-2592
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 118 | 98.pdf | processed
+2026-06-30 15:14:46,561 [INFO] Document saved | ID: 118 | 98.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 115 | INV-7070
+2026-06-30 15:14:46,576 [INFO] Invoice created | ID: 115 | INV-7070
+2026-06-30 15:14:46 [INFO] app.db: Document saved | ID: 119 | 99.pdf | processed
+2026-06-30 15:14:46,604 [INFO] Document saved | ID: 119 | 99.pdf | processed
+2026-06-30 15:14:46 [INFO] app.db: Invoice created | ID: 116 | INV-6876
+2026-06-30 15:14:46,615 [INFO] Invoice created | ID: 116 | INV-6876
+2026-06-30 15:24:51,878 [INFO] 1 change detected
+2026-06-30 15:25:04,881 [INFO] 1 change detected
+2026-06-30 15:25:26,524 [INFO] 1 change detected
+2026-06-30 15:25:28,979 [INFO] 5 changes detected
+2026-06-30 15:25:29 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 15:25:29,087 [INFO] ✅ Database initialization complete
+2026-06-30 15:25:29 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 15:25:29,088 [INFO] 🚀 Application started - Database ready
+2026-06-30 15:27:13,734 [INFO] 1 change detected
+2026-06-30 15:27:16,116 [INFO] 5 changes detected
+2026-06-30 15:27:16 [INFO] app.db: ✅ Database initialization complete
+2026-06-30 15:27:16,152 [INFO] ✅ Database initialization complete
+2026-06-30 15:27:16 [INFO] app.db: 🚀 Application started - Database ready
+2026-06-30 15:27:16,154 [INFO] 🚀 Application started - Database ready

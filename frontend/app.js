@@ -203,6 +203,7 @@ async function loadDuplicates() {
                 });
         }
 
+        // Corrected Merge Button Logic
         document.querySelectorAll(".merge-btn").forEach(btn => {
             btn.addEventListener("click", async (e) => {
                 const candidateId = e.target.getAttribute("data-id");
@@ -211,14 +212,22 @@ async function loadDuplicates() {
                 
                 if (confirm(`Merge invoice ${inv2} into ${inv1}?`)) {
                     try {
-                        const res = await fetch(`http://127.0.0.1:8000/duplicates/${candidateId}/merge`, {
-                            method: "POST"
+                        // Hits the unified /resolve endpoint instead of /merge
+                        const res = await fetch(`http://127.0.0.1:8000/duplicates/${candidateId}/resolve`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                                action: "merge",
+                                winner_id: parseInt(inv1) // Tells the backend which invoice to keep
+                            })
                         });
                         if (res.ok) {
                             alert("Merged successfully!");
                             loadDuplicates();
+                            if (typeof loadInvoices === "function") loadInvoices();
                         } else {
-                            alert("Merge failed");
+                            const errData = await res.json();
+                            alert("Merge failed: " + (errData.detail || "Unknown error"));
                         }
                     } catch (err) {
                         alert("Error merging: " + err.message);
@@ -227,19 +236,26 @@ async function loadDuplicates() {
             });
         });
 
+        // Corrected Dismiss / Not Duplicate Button Logic
         document.querySelectorAll(".not-duplicate-btn").forEach(btn => {
             btn.addEventListener("click", async (e) => {
                 const candidateId = e.target.getAttribute("data-id");
                 
                 try {
-                    const res = await fetch(`http://127.0.0.1:8000/duplicates/${candidateId}/dismiss`, {
-                        method: "POST"
+                    // Hits the unified /resolve endpoint instead of /dismiss
+                    const res = await fetch(`http://127.0.0.1:8000/duplicates/${candidateId}/resolve`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            action: "not_duplicate"
+                        })
                     });
                     if (res.ok) {
                         alert("Marked as not a duplicate");
                         loadDuplicates();
                     } else {
-                        alert("Failed to dismiss");
+                        const errData = await res.json();
+                        alert("Failed to dismiss: " + (errData.detail || "Unknown error"));
                     }
                 } catch (err) {
                     alert("Error: " + err.message);
